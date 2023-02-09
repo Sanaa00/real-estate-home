@@ -6,6 +6,12 @@
   height: 40vmin;
   pointer-events: none;
 }
+.container{
+  margin: 0 auto;
+  padding:0 40px;
+  max-width: 1200px;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

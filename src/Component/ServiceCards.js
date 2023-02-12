@@ -1,45 +1,51 @@
 import React from "react";
-
+import { IoHome } from "react-icons/io5";
+import ButtobBlue from "./ButtobBlue";
 function ServiceCards() {
   const services = [
     {
-      title: "One",
+      id: 1,
+      title: "Buy",
+      heading: "Buy A Home",
       url: "",
+      icon: <IoHome className="h-12 w-12 text-blue-400" />,
       content:
-        "labcd dhah dsvhgv xydyhv dcvg cdvsgc cgvdagv cgdga chhgaey gurqgfy cbnsb yrgfqy ",
-      text: "sumbit",
+        "A large list of offers of buying a home on our website with the parameters that suit you.",
+      text: "Buy",
     },
     {
-      title: "Two",
+      id: 2,
+      title: "Sell",
+      heading: "Sell A Home",
       url: "",
+      icon: <IoHome className="h-12 w-12 text-blue-400" />,
       content:
-        "labcd dhah dsvhgv xydyhv dcvg cdvsgc cgvdagv cgdga chhgaey gurqgfy cbnsb yrgfqy ",
-      text: "sumbit",
+        "The opportunity to sell your home at a bargain price and, if necessary, as quickly as possible.",
+      text: "Sell",
     },
     {
-      title: "Three",
-      url: "",
+      id: 3,
+      title: "Rent",
+      heading: "Rent A Home",
+      icon: <IoHome className="h-12 w-12 text-blue-400" />,
       content:
-        "labcd dhah dsvhgv xydyhv dcvg cdvsgc cgvdagv cgdga chhgaey gurqgfy cbnsb yrgfqy ",
-      text: "sumbit",
+        "The ability to rent home of any type, as well as for any rental period. form one day to a year.",
+      text: "Rent",
     },
   ];
   return (
     <>
-      <div className="flex justify-between ">
+      <div className="grid grid-cols-3 justify-between bg-gray-100">
         {services.map((service) => {
           return (
-            <div className="bg-white p-6 m-6 flex flex-col items-center ">
+            <div
+              key={service.id}
+              className="bg-white p-6 m-6 flex flex-col items-center "
+            >
               <p className="text-lg font-bold">{service.title}</p>
-              <img
-                src=""
-                alt="content"
-                className="h-40 w-full object-contain mt-4"
-              />
-              <p className="w-full text-sm mt-4">{service.content}</p>
-              <button className="w-full bg-blue-300 mt-4 shadow-sm  h-8 text-white">
-                {service.text}
-              </button>
+              {service.icon}
+              <p className="w-full text-sm my-4">{service.content}</p>
+              <ButtobBlue text={service.text} width="full" />
             </div>
           );
         })}

@@ -20,7 +20,7 @@ function ContactForm() {
       email: Yup.string().email("validate email").required("required"),
     }),
   });
-  console.log(formik.values);
+
   return (
     <Formik>
       <Form onSubmit={formik.handleSubmit}>

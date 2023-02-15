@@ -1,6 +1,7 @@
 import React from "react";
-import ButtobBlue from "../Component/ButtobBlue";
-import ContactInput from "../Component/ContactInput";
+
+import ContactForm from "../Component/ContactForm";
+
 function contact() {
   const contacts = [
     {
@@ -14,7 +15,8 @@ function contact() {
   return (
     <div className="bg-white grid gap-20 grid-cols-2 p-6 m-6">
       <div>
-        <p className="font-bold">If You Have Any Question</p>
+        <ContactForm />
+        {/* <p className="font-bold">If You Have Any Question</p>
         <ContactInput placeholder="Your Name" />
         <ContactInput placeholder="Your Email" />
         <textarea
@@ -22,7 +24,7 @@ function contact() {
           placeholder="Your Messages"
           className="bg-gray-100 rounded-tl-xl px-4 py-1 text-sm mt-2 w-full"
         />
-        <ButtobBlue text="Submit Now" width="full" />
+        <ButtobBlue text="Submit Now" width="full" /> */}
       </div>
       <div className="flex flex-col justify-between">
         <p>GET IN TOUCH</p>

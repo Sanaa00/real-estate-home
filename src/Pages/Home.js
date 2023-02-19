@@ -5,24 +5,25 @@ import house1 from "../images/house1.jpg";
 import house2 from "../images/house2.jpg";
 import house3 from "../images/house3.jpg";
 import HomeForm from "../Component/HomeForm";
+
 function Home() {
   return (
     <>
-      <div className="flex justify-between items-center">
-        <div className="w-1/2 flex flex-col justify-between items-start h-64">
-          <p className="font-bold text-[40px]">
+      <div className="flex-col flex md:flex-row justify-between items-center mt-10 md:mt-20 pt-10">
+        <div className="md:w-1/2 flex flex-col justify-between md:h-64">
+          <p className="font-bold text-[30px] sm:text-[40px]">
             Find Your Beautiful <span className="text-blue-700">Home</span> With
             Us
           </p>
           <p className="text-sm">
             Track down the idea spot to be live with your familly.
           </p>
-          <div className="flex">
-            <ButtobBlue props="You're looking for this " />
-            <ButtonSky props="Watch Video" />
+          <div className="mt-2 md:mt-0 flex flex-row h-8">
+            <ButtobBlue text="You're looking for this " width="60" />
+            <ButtonSky text="Watch Video" width="60" />
           </div>
         </div>
-        <div className="flex-col justify-center w-1/2 ">
+        <div className="mt-10 md:mt-0 flex-col justify-center sm:w-1/2 ">
           <div className="flex flex-row-reverse">
             <img
               src={house1}
@@ -35,7 +36,7 @@ function Home() {
           <img
             src={house3}
             alt="house"
-            className="h-32 w-full object-cover rounded-tl-[50px] mt-2  shadow-sm"
+            className="h-32 w-full object-cover rounded-tl-[50px] mt-2  shadow-sm "
           />
           <img
             src={house2}

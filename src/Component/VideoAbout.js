@@ -4,7 +4,7 @@ function VideoAbout() {
   const videoId = "5hemeiTVIG0";
   const style = {
     height: "290",
-    width: "540",
+    width: "300",
   };
   return (
     <div>

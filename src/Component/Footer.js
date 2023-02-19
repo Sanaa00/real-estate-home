@@ -31,13 +31,13 @@ function Footer() {
   ];
   return (
     <div className="bg-gray-100 pt-20 flex flex-col justify-between  text-sm p-6">
-      <div className="flex justify-between ">
-        <div className="flex flex-col justify-between">
+      <div className="flex flex-col md:flex-row justify-between ">
+        <div className="flex flex-col justify-between pr-4">
           <img src={logo} alt="logo" className="h-10 w-10" />
           <p className="mt-3">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
           </p>
-          <div className="mt-3 overflow-hidden relative">
+          <div className="mt-3 overflow-hidden relative ">
             <input
               placeholder="Type Your Email "
               className="w-full rounded-tl-xl py-1 px-2 relative "
@@ -59,19 +59,19 @@ function Footer() {
             })}
           </div>
         </div>
-        <div className="flex flex-col justify-between">
+        <div className="mt-4 md:mt-0 flex flex-col justify-between">
           <p className="font-bold">Company</p>
           {Company.map((text) => {
             return <p key={text.id}>{text.text}</p>;
           })}
         </div>
-        <div className="flex flex-col justify-between">
+        <div className="mt-4 md:mt-0 flex flex-col justify-between">
           <p className="font-bold">Support</p>
           {support.map((supp) => {
             return <p key={supp.id}>{supp.text}</p>;
           })}
         </div>
-        <div className="flex flex-col justify-between">
+        <div className="mt-4 md:mt-0 flex flex-col justify-between">
           <p className="font-bold">Contact Us</p>
           {Countacts.map((con) => {
             return (
@@ -82,7 +82,7 @@ function Footer() {
           })}
         </div>
       </div>
-      <p className="text-blue-400 text-center mt-5">
+      <p className=" text-blue-400 text-center mt-5">
         Copyright - All Right Reserved
       </p>
     </div>

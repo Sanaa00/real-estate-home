@@ -1,16 +1,14 @@
 import "./App.css";
-import Nav from "./Component/Nav";
-import Home from "./Pages/Home";
-import About from "./Pages/About";
-import Service from "./Pages/Service";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Layout from "./Pages/Layout";
 function App() {
   return (
     <div className="bg-gray-100">
-      <div className="container ">
-        <Nav />
-        <Home />
-        <About />
-        <Service />
+      <div className="max-w-full bg-gray-100">
+        <div className=" px-6 sm:px-32">
+          <Layout />
+        </div>
       </div>
     </div>
   );

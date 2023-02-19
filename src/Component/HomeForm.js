@@ -57,7 +57,7 @@ function HomeForm() {
   ];
   return (
     <div className="bg-white p-4 grid mt-20">
-      <div className="grid  grid-cols-4 grid-rows-2 justify-between items-end gap-5 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 grid-rows-2 justify-between items-end gap-5 ">
         {homeForm.map((form) => {
           return (
             <div key={form.id}>

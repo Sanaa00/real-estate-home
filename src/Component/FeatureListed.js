@@ -55,10 +55,13 @@ function FeatureListed() {
     <div className="bg-gray-100 flex flex-col justify-center items-center pt-20">
       <p className="text-lg">OUR HOUSE</p>
       <p className="text-2xl font-bold mt-3">Featured Listings</p>
-      <div className=" grid grid-cols-3  items-center justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-between bg-gray-100 ">
         {features.slice(0, card).map((feature) => {
           return (
-            <div key={feature.id} className="bg-white p-4 m-6 flex flex-col">
+            <div
+              key={feature.id}
+              className="bg-white p-4 flex flex-col items-center w-full"
+            >
               <img
                 src={feature.img}
                 alt="feature"
@@ -83,7 +86,7 @@ function FeatureListed() {
       </div>
 
       <button
-        className={`px-4 py-1 text-sm bg-blue-100 rounded-tl-2xl text-blue-800 ml-4 w-40`}
+        className={`px-4 py-1 text-sm bg-blue-100 rounded-tl-2xl text-blue-800 ml-4 w-40 mt-5`}
         onClick={() => moreCard()}
       >
         SeeMore

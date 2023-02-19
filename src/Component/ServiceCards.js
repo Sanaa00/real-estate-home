@@ -35,12 +35,12 @@ function ServiceCards() {
   ];
   return (
     <>
-      <div className="grid grid-cols-3 justify-between bg-gray-100">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10  justify-between bg-gray-100">
         {services.map((service) => {
           return (
             <div
               key={service.id}
-              className="bg-white p-6 m-6 flex flex-col items-center "
+              className="bg-white p-4 flex flex-col items-center w-full "
             >
               <p className="text-lg font-bold">{service.title}</p>
               {service.icon}

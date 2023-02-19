@@ -9,7 +9,7 @@ function Numbers() {
   ];
   return (
     <>
-      <div className="mt-10 md:mt-0 bg-white p-6 grid grid-cols-2 gap-5 sm:gap-0 sm:grid-cols-4">
+      <div className="mt-10 lg:mt-0 bg-white p-6 grid grid-cols-2 gap-5 sm:gap-0 lg:grid-cols-4">
         {numbers.map((number) => {
           return (
             <div

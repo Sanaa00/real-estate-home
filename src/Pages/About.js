@@ -6,11 +6,11 @@ import VideoAbout from "../Component/VideoAbout";
 function About() {
   return (
     <>
-      <div className="mt-20 flex-col flex lg:flex-row justify-between md:h-96 bg-gray-100 pt-10">
-        <div className="md:w-1/2">
+      <div className="mt-20 flex-col flex lg:flex-row justify-between lg:h-96 bg-gray-100 pt-10">
+        <div className="lg:w-1/2">
           <VideoAbout />
         </div>
-        <div className="md:w-1/2 mt-4 md:mt-0 px-6">
+        <div className="lg:w-1/2 mt-4 lg:mt-0 px-6">
           <p className="text-lg">About Us</p>
           <p className="text-[30px] sm:text-[40px] lg:text-[30px] font-bold">
             Who We Are?

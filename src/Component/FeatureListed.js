@@ -55,7 +55,7 @@ function FeatureListed() {
     <div className="bg-gray-100 flex flex-col justify-center items-center pt-20">
       <p className="text-lg">OUR HOUSE</p>
       <p className="text-2xl font-bold mt-3">Featured Listings</p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-between bg-gray-100 ">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 justify-between bg-gray-100 ">
         {features.slice(0, card).map((feature) => {
           return (
             <div

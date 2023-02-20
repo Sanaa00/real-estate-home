@@ -7,42 +7,48 @@ function FeatureListed() {
       id: 1,
       img: "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       title: "Modern Bungalow",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      content:
+        "A large list of offers of buying a home on our website with the parameters that suit you.",
       price: "$10000",
     },
     {
       id: 2,
       img: "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2074&q=80",
       title: "Modern Bungalow",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      content:
+        "A large list of offers of buying a home on our website with the parameters that suit you.",
       price: "$10000",
     },
     {
       id: 3,
       img: "https://images.unsplash.com/photo-1449844908441-8829872d2607?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       title: "Modern Bungalow",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      content:
+        "A large list of offers of buying a home on our website with the parameters that suit you. ",
       price: "$10000",
     },
     {
       id: 4,
       img: "https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       title: "Modern Bungalow",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      content:
+        "A large list of offers of buying a home on our website with the parameters that suit you.",
       price: "$10000",
     },
     {
       id: 5,
       img: "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       title: "Modern Bungalow",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      content:
+        "A large list of offers of buying a home on our website with the parameters that suit you.",
       price: "$10000",
     },
     {
       id: 6,
       img: "https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
       title: "Modern Bungalow",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      content:
+        "A large list of offers of buying a home on our website with the parameters that suit you.",
       price: "$10000",
     },
   ];
@@ -54,7 +60,7 @@ function FeatureListed() {
   return (
     <div className="bg-gray-100 flex flex-col justify-center items-center pt-20">
       <p className="text-lg">OUR HOUSE</p>
-      <p className="text-2xl font-bold mt-3">Featured Listings</p>
+      <p className="text-2xl font-bold my-3">Featured Listings</p>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 justify-between bg-gray-100 ">
         {features.slice(0, card).map((feature) => {
           return (

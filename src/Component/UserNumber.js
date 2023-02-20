@@ -7,7 +7,7 @@ function UserNumber() {
     { id: 3, num: "7", text: "Awards" },
   ];
   return (
-    <div className="flex my-5  justify-between">
+    <div className="flex my-2  justify-between">
       {users.map((user) => {
         return (
           <div key={user.id} className="flex-col flex items-center ">

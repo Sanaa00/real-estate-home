@@ -7,7 +7,7 @@ function About() {
   return (
     <>
       <div className="mt-20 flex-col flex lg:flex-row justify-between lg:h-96 bg-gray-100 pt-10">
-        <div className="lg:w-1/2">
+        <div className="lg:w-1/2 flex items-center justify-center lg:items-start">
           <VideoAbout />
         </div>
         <div className="lg:w-1/2 mt-4 lg:mt-0 px-6">

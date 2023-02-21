@@ -40,7 +40,7 @@ function ServiceCards() {
           return (
             <div
               key={service.id}
-              className="bg-white p-4 flex flex-col items-center w-full "
+              className="bg-white p-4 flex flex-col items-center w-full shadow-sm hover:shadow-lg"
             >
               <p className="text-lg font-bold">{service.title}</p>
               {service.icon}

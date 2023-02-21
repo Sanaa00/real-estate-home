@@ -1,12 +1,11 @@
 import "./App.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 import Layout from "./Pages/Layout";
 function App() {
   return (
     <div className="bg-gray-100">
       <div className="max-w-full bg-gray-100">
-        <div className=" px-6 sm:px-32">
+        <div className=" px-6 sm:px-10 md:px-16 lg:px-32 bg-gray-100">
           <Layout />
         </div>
       </div>

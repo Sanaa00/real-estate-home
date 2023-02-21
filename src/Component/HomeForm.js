@@ -2,6 +2,12 @@ import React from "react";
 import ButtobBlue from "./ButtobBlue";
 import Selector from "./Selector";
 
+const options = [
+  { value: "Buy", label: "Buy" },
+  { value: "Rent", label: "Rent" },
+  { value: "Sell", label: "Sell" },
+];
+
 function HomeForm() {
   const homeForm = [
     {
@@ -68,7 +74,7 @@ function HomeForm() {
                   className="bg-gray-100 rounded-tl-xl px-4 py-1 text-sm mt-2 w-full"
                 />
               ) : (
-                <Selector />
+                <Selector options={options} />
               )}
             </div>
           );

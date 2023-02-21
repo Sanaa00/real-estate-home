@@ -66,7 +66,7 @@ function FeatureListed() {
           return (
             <div
               key={feature.id}
-              className="bg-white p-4 flex flex-col items-center w-full"
+              className="bg-white p-4 flex flex-col items-center w-full shadow-sm hover:shadow-lg"
             >
               <img
                 src={feature.img}
@@ -92,7 +92,7 @@ function FeatureListed() {
       </div>
 
       <button
-        className={`px-4 py-1 text-sm bg-blue-100 rounded-tl-2xl text-blue-800 ml-4 w-40 mt-5`}
+        className={`px-4 py-1 text-sm bg-blue-100 rounded-tl-2xl text-blue-800 ml-4 w-40 mt-5 hover:bg-blue-200`}
         onClick={() => moreCard()}
       >
         SeeMore
